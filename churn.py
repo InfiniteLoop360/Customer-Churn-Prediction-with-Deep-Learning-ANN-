@@ -16,23 +16,13 @@ tf.random.set_seed(SEED)
 
 
 # # ===============================
-# # OPTION A: Upload CSV manually
+# # Upload CSV manually
 # # ===============================
 from google.colab import files
 uploaded = files.upload()
 
 df = pd.read_csv('/content/Churn_Modelling (1).csv')
 df.head()
-
-# ===============================
-# OPTION B: Load from Google Drive
-# ===============================
-# from google.colab import drive
-# drive.mount('/content/drive')
-
-# df = pd.read_csv('/content/Churn_Modelling (1).csv')
-# df.head()
-
 
 # ===============================
 # 3. Data Cleaning & Preprocessing
